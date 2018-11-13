@@ -1,0 +1,14 @@
+parameter_defaults:
+  ControllerSchedulerHints:
+    'capabilities:node':'controller-%index%'
+  NovaComputeSchedulerHints:
+    'capabilities:node':'compute-%index%'
+  TelemetrySchedulerHints:
+    'capabilities:node':'telemetry-%index%'
+  HostnameMap:
+    overcloud-controller-0 : overcloud-controller-prod-01
+    overcloud-controller-1 : overcloud-controller-prod-02
+    overcloud-controller-2 : overcloud-controller-prod-03
+    overcloud-compute-0 : overcloud-compute-prod-01
+    overcloud-compute-1 : overcloud-compute-prod-02
+    overcloud-telemetry-0 : overcloud-telemetry-prod-01

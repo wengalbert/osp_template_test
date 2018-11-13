@@ -1,0 +1,27 @@
+
+resource_registry:
+  # OS::TripleO::BlockStorage::Net::SoftwareConfig: nic-configs/cinder-storage.yaml
+  OS::TripleO::Compute::Net::SoftwareConfig: /root/templates/git/osp13_Prod/compute.yaml 
+  OS::TripleO::Controller::Net::SoftwareConfig: /root/templates/git/osp13_Prod/controller.yaml
+  OS::TripleO::Telemetry::Net::SoftwareConfig: /root/templates/git/osp13_Prod/telemetry.yaml
+  # OS::TripleO::ObjectStorage::Net::SoftwareConfig: nic-configs/swift-storage.yaml
+  # OS::TripleO::CephStorage::Net::SoftwareConfig: nic-configs/ceph-storage.yaml
+
+parameter_defaults:
+  ControlPlaneSubnetCidr: '24'
+  ControlPlaneDefaultRoute: 192.168.1.3
+  EC2MetadataIp: 10.7.33.6
+  ExternalNetCidr: 10.7.33.0/23
+  ExternalAllocationPools: [{"start": "10.7.33.40", "end": "10.7.33.50"}]
+  ExternalInterfaceDefaultRoute: 10.7.32.254
+  PublicVirtualFixedIPs: [{ "ip_address": "10.7.33.51" }]
+  NeutronExternalNetworkBridge: "''"
+  InternalApiNetCidr: 192.168.2.0/24
+  InternalApiAllocationPools: [{"start": "192.168.2.10", "end": "192.168.2.50"}]
+  StorageNetCidr: 192.168.5.0/24
+  StorageAllocationPools: [{"start": "192.168.5.10", "end": "192.168.5.50"}]
+  StorageMgmtNetCidr: 192.168.4.0/24
+  StorageMgmtAllocationPools: [{"start": "192.168.4.10", "end": "192.168.4.50"}]
+  TenantNetCidr: 192.168.3.0/24
+  TenantAllocationPools: [{"start": "192..168.3.10", "end": "192.168.3.50"}]
+  DnsServers: ["10.7.33.10", "10.1.255.200"]

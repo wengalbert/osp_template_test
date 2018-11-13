@@ -1,0 +1,47 @@
+{
+   "nodes":[
+        {
+         "mac":["00:50:56:95:f2:e2"],
+         "name":"controller01",             
+         "arch":"x86_64",               
+         "pm_type":"fake_pxe",
+	 "_comment":"Room 1 - Rack A : 10-11U"
+        },
+        {
+         "mac":["00:50:56:95:be:4f"],
+         "name":"controller02",
+         "arch":"x86_64",
+         "pm_type":"fake_pxe",
+         "_comment":"Room 1 - Rack A : 12-13U"
+        },
+        {
+	 "mac":["00:50:56:95:ae:46"],
+         "name":"controller03",
+         "arch":"x86_64",
+         "pm_type":"fake_pxe",
+	 "_comment":"Room 1 - Rack A : 14-15U"
+        },
+        {
+	"mac":["00:50:56:95:34:e6"],
+	"name":"compute01",
+	"arch":"x86_64",
+	"pm_type":"fake_pxe",
+	"_comment":"Room 1 - Rack B : 10-11U"
+	},
+	{
+	"mac":["00:50:56:95:cd:e4"],
+	"name":"compute02",
+	"arch":"x86_64",
+	"pm_type":"fake_pxe",
+	"_comment":"Room 1 - Rack B : 12-13U"
+	},
+	{
+	"mac":["00:50:56:95:0b:f4"],
+	"name":"telmetry01",
+	"arch":"x86_64",
+	"pm_type":"fake_pxe",
+	"_comment":"Room 1 - Rack A : 16-17U"
+	}
+   ]
+}
+
